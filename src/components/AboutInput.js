@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import data from "./data";
 
-function Button({ buttonName, buttonEvent, color = "" }) {
+function Button({ buttonName, buttonEvent, classAppend="" }) {
     return (
-        <button onClick={buttonEvent} class={"waves-effect waves-light btn-small " + color}>{buttonName}</button>
+        <button onClick={buttonEvent} className={"waves-effect waves-light btn-small " + classAppend}>{buttonName}</button>
     )
 }
 
@@ -46,19 +46,17 @@ export default class AboutInput extends Component {
                         <h6>
                             <strong>ABOUT ME</strong>
                         </h6>
-                        <form className="grey-text">
-                            <span class="input-field">
-                                <textarea 
-                                    placeholder="Write something about yourself."
-                                    id="about"
-                                    type="text"
-                                    class="materialize-textarea" 
-                                    value={this.state.about}
-                                    onChange={this.handleChange}     
-                                    ref={this.aboutFieldRef}                               
-                                />                                
-                            </span>
-                        </form>                      
+                        <span className="input-field">
+                            <textarea 
+                                placeholder="Write something about yourself."
+                                id="about"
+                                type="text"
+                                className="materialize-textarea" 
+                                value={this.state.about}
+                                onChange={this.handleChange}     
+                                ref={this.aboutFieldRef}                               
+                            />                                
+                        </span>
                     </div>
                     
                     
@@ -66,26 +64,24 @@ export default class AboutInput extends Component {
                         <h5>
                             <strong>PERSONAL INFO</strong>
                         </h5>
-                        <div className="row">
+                        <div >
                             <div>
-                                <span>
-                                    <strong>Address:</strong>
-                                    <form className="grey-text">
-                                        <span class="input-field">
-                                            <input 
-                                                placeholder="Address"
-                                                id="address"
-                                                type="text"
-                                                value={this.state.address}
-                                                onChange={this.handleChange}
-                                            />
-                                        </span>
-                                    </form>                      
-                                </span>
+                                <strong>Address:</strong>
+                                <form className="grey-text">
+                                    <span className="input-field">
+                                        <input 
+                                            placeholder="Address"
+                                            id="address"
+                                            type="text"
+                                            value={this.state.address}
+                                            onChange={this.handleChange}
+                                        />
+                                    </span>
+                                </form> 
                                 <span>
                                     <strong>Email:</strong>
                                     <form className="grey-text">
-                                        <span class="input-field">
+                                        <span className="input-field">
                                             <input 
                                                 placeholder="email"
                                                 id="email"
@@ -99,7 +95,7 @@ export default class AboutInput extends Component {
                                 <span>
                                     <strong>Phone:</strong>
                                     <form className="grey-text">
-                                        <span class="input-field">
+                                        <span className="input-field">
                                             <input 
                                                 placeholder="Phone Number"
                                                 id="phone"
@@ -110,10 +106,10 @@ export default class AboutInput extends Component {
                                         </span>
                                     </form>  
                                 </span>
-                                <div>
+                                <span>
                                     <Button buttonName="Submit" buttonEvent={this.confirmChange} />
-                                    <Button buttonName="Cancel" buttonEvent={this.props.toggle} color="red" />
-                                </div>
+                                    <Button buttonName="Cancel" buttonEvent={this.props.toggle} classAppend="red" />
+                                </span>
                             </div>
                         </div>
                     </div>

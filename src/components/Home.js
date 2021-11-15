@@ -5,7 +5,6 @@ import About from './About';
 import AboutInput from './AboutInput';
 import M from 'materialize-css';
 
-
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -22,8 +21,6 @@ export default class Home extends Component {
     aboutFieldAutoResize(textarea) {
         M.textareaAutoResize(textarea);
     }
-
-
 
     render() {
         return (
