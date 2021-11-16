@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
-import ImgProfile from './images/default.png';
+import data from './data';
 
 export default class Profile extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: data.name,
+            title: data.title,
+        }
+    }
+
     render() {
         return (
             <div>
                 <div className="card">
-                    <div className="card-image">
-                        <img className="activator" src={ImgProfile} alt="John Doe" />
-                    </div>
                     <div className="card-content">
                         <span className="card-title activator grey-text text-darken-4">
-                            John Doe
+                            {this.state.name}
                         </span>
-                        <p>Career Title</p>
+                        <p>
+                            {this.state.title}
+                            <span className="right" style={{cursor:"pointer"}} onClick={this.props.toggle}>
+                                <i className="fas fa-pen-to-square">edit</i>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

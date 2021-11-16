@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import data from "./data";
-
-function Button({ buttonName, buttonEvent, classAppend="" }) {
-    return (
-        <button onClick={buttonEvent} className={"waves-effect waves-light btn-small " + classAppend}>{buttonName}</button>
-    )
-}
+import Button from './FormComponents/FormButtons';
 
 export default class AboutInput extends Component {
     constructor(props) {
