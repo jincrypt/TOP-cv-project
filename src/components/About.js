@@ -28,9 +28,9 @@ export default class About extends Component {
                     
                     <div className="card-action">
                         
-                        <h5>
+                        <h6>
                             <strong>PERSONAL INFO</strong>
-                        </h5>
+                        </h6>
                                 <p>
                                     <strong>Address: </strong>
                                     {this.state.address}

@@ -52,13 +52,12 @@ export default class AboutInput extends Component {
                                 ref={this.aboutFieldRef}                               
                             />                                
                         </span>
-                    </div>
-                    
+                    </div>                    
                     
                     <div className="card-action">
-                        <h5>
+                        <h6>
                             <strong>PERSONAL INFO</strong>
-                        </h5>
+                        </h6>
                         <div >
                             <div>
                                 <strong>Address:</strong>

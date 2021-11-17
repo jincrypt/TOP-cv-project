@@ -30,11 +30,6 @@ class Navbar extends Component {
                                         <i className="fas fa-graduation-cap"></i> Education
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link to="/portfolio">
-                                        <i className="fas fa-address-card"></i> Portfolios
-                                    </Link>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -53,11 +48,6 @@ class Navbar extends Component {
                     <li>
                         <Link to="/education">
                             <i className="fas fa-graduation-cap"></i> Education
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio">
-                            <i className="fas fa-address-card"></i> Portfolios
                         </Link>
                     </li>
                 </ul>
