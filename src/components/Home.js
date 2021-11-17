@@ -5,7 +5,6 @@ import ProfileInput from './ProfileInput';
 import About from './About';
 import AboutInput from './AboutInput';
 import Experience from './Experience';
-import ExperienceInput from './ExperienceInput';
 import M from 'materialize-css';
 
 export default class Home extends Component {
@@ -14,11 +13,9 @@ export default class Home extends Component {
         this.state = {
             profileInput: false,
             aboutInput: false,
-            experienceInput: false,
         }
         this.profileEdit = this.profileEdit.bind(this);
         this.aboutEdit = this.aboutEdit.bind(this);
-        this.experienceEdit = this.experienceEdit.bind(this);
     }
 
     profileEdit() {
@@ -26,9 +23,6 @@ export default class Home extends Component {
     }
     aboutEdit() {
         this.setState({ aboutInput: !this.state.aboutInput })
-    }
-    experienceEdit() {
-        this.setState({ experienceInput: !this.state.experienceInput })
     }
 
     textareaAutoResize(textarea) {
@@ -54,11 +48,8 @@ export default class Home extends Component {
                                     :
                                 <About toggle={this.aboutEdit}/>
                             }
-                            {this.state.experienceInput ? 
-                                <ExperienceInput toggle={this.experienceEdit} onLoad={this.textareaAutoResize} />
-                                    :
-                                <Experience toggle={this.experienceEdit} />
-                            }
+                            <Experience onLoad={this.textareaAutoResize} />
+                            
                             {/* <Education /> */}                            
                         </div>
                     </div>
