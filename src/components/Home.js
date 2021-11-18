@@ -5,6 +5,7 @@ import ProfileInput from './ProfileInput';
 import About from './About';
 import AboutInput from './AboutInput';
 import Experience from './Experience';
+import Education from './Education';
 import M from 'materialize-css';
 
 export default class Home extends Component {
@@ -31,6 +32,7 @@ export default class Home extends Component {
 
     render() {
         return (
+            <>
             <section>
                 <Navbar />
                 <div className="container">
@@ -45,10 +47,12 @@ export default class Home extends Component {
                                     :
                                 <About toggle={this.aboutEdit}/>
                             }
+                            <Education onLoad={this.textareaAutoResize} />   
                             <Experience onLoad={this.textareaAutoResize} />                         
                         </div>
                 </div>
             </section>
+            </>
         )
     }
 }

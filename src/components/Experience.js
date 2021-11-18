@@ -293,8 +293,6 @@ export default class Experience extends Component {
                             </span>
                         </p>)
                     }
-
-
                 </div>
             </div>
         )
