@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TOP-cv-project/static/css/main.1c0baedd.chunk.css",
+    "main.js": "/TOP-cv-project/static/js/main.a9203c09.chunk.js",
+    "main.js.map": "/TOP-cv-project/static/js/main.a9203c09.chunk.js.map",
+    "runtime-main.js": "/TOP-cv-project/static/js/runtime-main.3fac8acf.js",
+    "runtime-main.js.map": "/TOP-cv-project/static/js/runtime-main.3fac8acf.js.map",
+    "static/css/2.77b31a73.chunk.css": "/TOP-cv-project/static/css/2.77b31a73.chunk.css",
+    "static/js/2.fdc63653.chunk.js": "/TOP-cv-project/static/js/2.fdc63653.chunk.js",
+    "static/js/2.fdc63653.chunk.js.map": "/TOP-cv-project/static/js/2.fdc63653.chunk.js.map",
+    "index.html": "/TOP-cv-project/index.html",
+    "static/css/2.77b31a73.chunk.css.map": "/TOP-cv-project/static/css/2.77b31a73.chunk.css.map",
+    "static/css/main.1c0baedd.chunk.css.map": "/TOP-cv-project/static/css/main.1c0baedd.chunk.css.map",
+    "static/js/2.fdc63653.chunk.js.LICENSE.txt": "/TOP-cv-project/static/js/2.fdc63653.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fac8acf.js",
+    "static/css/2.77b31a73.chunk.css",
+    "static/js/2.fdc63653.chunk.js",
+    "static/css/main.1c0baedd.chunk.css",
+    "static/js/main.a9203c09.chunk.js"
+  ]
+}
