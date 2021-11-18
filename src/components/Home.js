@@ -6,6 +6,7 @@ import About from './About';
 import AboutInput from './AboutInput';
 import Experience from './Experience';
 import Education from './Education';
+import Footer from './Footer'
 import M from 'materialize-css';
 
 export default class Home extends Component {
@@ -51,6 +52,7 @@ export default class Home extends Component {
                             <Experience onLoad={this.textareaAutoResize} />                         
                         </div>
                 </div>
+                <Footer />
             </section>
             </>
         )
