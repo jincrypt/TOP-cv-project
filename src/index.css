@@ -3,6 +3,7 @@ textarea {
   font-size: 14px !important;
 }
 
-#date {
+#date, input {
   font-size: 14px !important;
 }
+

@@ -6,9 +6,6 @@ export default class About extends Component {
         super(props);
         this.state = {
             about: data.about,
-            address: data.address,
-            email: data.email,
-            phone: data.phone,
         }
     }
 
@@ -23,30 +20,11 @@ export default class About extends Component {
                         <p className="grey-text">
                             {this.state.about}                            
                         </p>                        
-                    </div>
-                    
-                    
-                    <div className="card-action">
-                        
-                        <h6>
-                            <strong>PERSONAL INFO</strong>
-                        </h6>
-                                <p>
-                                    <strong>Address: </strong>
-                                    {this.state.address}
-                                </p>
-                                <p>
-                                    <strong>Email: </strong>
-                                    {this.state.email}
-                                </p>
-                                <p>
-                                    <strong>Phone: </strong>
-                                    {this.state.phone}
-                                    <span className="right" style={{cursor:"pointer"}} onClick={this.props.toggle}>
-                                        <i className="fas fa-pen-to-square">edit</i>
-                                    </span>  
-                                </p>
-
+                        <p style={{height: "22px"}}>
+                            <span className="right" style={{cursor:"pointer"}} onClick={this.props.toggle}>
+                                <i className="fas fa-pen-to-square">edit</i>
+                            </span>  
+                        </p>
                     </div>
                 </div>
             </div>

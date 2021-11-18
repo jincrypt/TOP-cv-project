@@ -28,9 +28,9 @@ class WorkExperienceView extends Component {
                     <blockquote className="no-pad">
                         <h6 className="mt-bottom">
                             <strong>{this.state.company}</strong>
-                            <h6>
+                            <p>
                                 <strong>{this.state.title}</strong>
-                            </h6>
+                            </p>
                         </h6>
                         <p>
                             {this.state.description}
@@ -229,7 +229,6 @@ class WorkExperienceAdd extends Component {
         )
     }
 }
-
 
 class WorkExperienceCard extends Component {
     constructor(props) {

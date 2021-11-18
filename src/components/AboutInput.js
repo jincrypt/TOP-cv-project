@@ -7,9 +7,6 @@ export default class AboutInput extends Component {
         super(props);
         this.state = {
             about: data.about,
-            address: data.address,
-            email: data.email,
-            phone: data.phone,
         };
 
         this.confirmChange = this.confirmChange.bind(this);
@@ -23,9 +20,6 @@ export default class AboutInput extends Component {
 
     confirmChange(e) {
         data.about = this.state.about.trim();
-        data.address = this.state.address.trim();
-        data.email = this.state.email.trim();
-        data.phone = this.state.phone.trim();
         this.props.toggle();
     }
 
@@ -51,63 +45,14 @@ export default class AboutInput extends Component {
                                 onChange={this.handleChange}     
                                 ref={this.aboutFieldRef}                               
                             />                                
-                        </span>
-                    </div>                    
+                        </span>         
                     
-                    <div className="card-action">
-                        <h6>
-                            <strong>PERSONAL INFO</strong>
-                        </h6>
-                        <div >
-                            <div>
-                                <strong>Address:</strong>
-                                <form className="grey-text">
-                                    <span className="input-field">
-                                        <input 
-                                            placeholder="Address"
-                                            id="address"
-                                            type="text"
-                                            value={this.state.address}
-                                            onChange={this.handleChange}
-                                        />
-                                    </span>
-                                </form> 
-                                <span>
-                                    <strong>Email:</strong>
-                                    <form className="grey-text">
-                                        <span className="input-field">
-                                            <input 
-                                                placeholder="email"
-                                                id="email"
-                                                type="email"
-                                                value={this.state.email}
-                                                onChange={this.handleChange}
-                                            />
-                                        </span>
-                                    </form>  
-                                </span>
-                                <span>
-                                    <strong>Phone:</strong>
-                                    <form className="grey-text">
-                                        <span className="input-field">
-                                            <input 
-                                                placeholder="Phone Number"
-                                                id="phone"
-                                                type="text" 
-                                                value={this.state.phone}
-                                                onChange={this.handleChange}
-                                            />
-                                        </span>
-                                    </form>  
-                                </span>
-                                <span>
-                                    <Button buttonName="Submit" buttonEvent={this.confirmChange} />
-                                    <Button buttonName="Cancel" buttonEvent={this.props.toggle} classAppend="red" />
-                                </span>
-                            </div>
-                        </div>
+                        <span>
+                            <Button buttonName="Submit" buttonEvent={this.confirmChange} />
+                            <Button buttonName="Cancel" buttonEvent={this.props.toggle} classAppend="red" />
+                        </span>
                     </div>
-                </div>               
+                </div>
             </div>
         )
     }

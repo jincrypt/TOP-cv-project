@@ -34,25 +34,19 @@ export default class Home extends Component {
             <section>
                 <Navbar />
                 <div className="container">
-                    <div className="row">
-                        <div className="col s12 m4 l3">
+                        <div className="col s12 m8 l9">
                             {this.state.profileInput ? 
                                 <ProfileInput toggle={this.profileEdit} />
                                     :
                                 <Profile toggle={this.profileEdit} />
                             }
-                        </div>
-                        <div className="col s12 m8 l9">
                             {this.state.aboutInput ?
                                 <AboutInput toggle={this.aboutEdit} onLoad={this.textareaAutoResize}/>
                                     :
                                 <About toggle={this.aboutEdit}/>
                             }
-                            <Experience onLoad={this.textareaAutoResize} />
-                            
-                            {/* <Education /> */}                            
+                            <Experience onLoad={this.textareaAutoResize} />                         
                         </div>
-                    </div>
                 </div>
             </section>
         )
