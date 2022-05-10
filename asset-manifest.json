@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TOP-cv-project/static/css/main.1c0baedd.chunk.css",
-    "main.js": "/TOP-cv-project/static/js/main.a5a86412.chunk.js",
-    "main.js.map": "/TOP-cv-project/static/js/main.a5a86412.chunk.js.map",
+    "main.js": "/TOP-cv-project/static/js/main.c5908c3b.chunk.js",
+    "main.js.map": "/TOP-cv-project/static/js/main.c5908c3b.chunk.js.map",
     "runtime-main.js": "/TOP-cv-project/static/js/runtime-main.3fac8acf.js",
     "runtime-main.js.map": "/TOP-cv-project/static/js/runtime-main.3fac8acf.js.map",
     "static/css/2.77b31a73.chunk.css": "/TOP-cv-project/static/css/2.77b31a73.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.77b31a73.chunk.css",
     "static/js/2.fdc63653.chunk.js",
     "static/css/main.1c0baedd.chunk.css",
-    "static/js/main.a5a86412.chunk.js"
+    "static/js/main.c5908c3b.chunk.js"
   ]
 }
