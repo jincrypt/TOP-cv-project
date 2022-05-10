@@ -1,6 +1,6 @@
 # Project: CV Application
 
-[Live Preview](https://jincrypt.github.io/TOP-cv-project/)
+[Live Preview](https://mkaleung.github.io/TOP-cv-project/)
 
 ## Criteria:
 * A section to add general information like name, email, and phone number.  [Complete]

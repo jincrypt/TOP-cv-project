@@ -9,8 +9,8 @@ export default class Footer extends Component {
                     <div className="light-blue darken-4 center">
                         <p className="white-text">
                             {"Made by "}
-                            <a href="https://github.com/jincrypt/TOP-cv-project">
-                                {"Jincrypt"}
+                            <a href="https://github.com/mkaleung/TOP-cv-project">
+                                {"mkaleung"}
                                 <img height="14px" src={GithubSVG} alt="" />
                             </a>
                         </p>
